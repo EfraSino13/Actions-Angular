@@ -1,0 +1,12 @@
+<nav class="align-content-around">
+  <div class="sidebar-header">
+    <h4 class="text-center header">Simple Sidebar</h4>
+    <strong><i class="fas fa-grin-squint-tears"></i></strong>
+  </div>
+  <app-menu></app-menu>
+  <div class="sidebar-toggler">
+    <button type="button" (click)="toggle()" class="toggler text-light btn btn-light btn-sm rounded-circle">
+      <i class="fas" [ngClass]="{'fa-angle-right': toggled, 'fa-angle-left': !toggled}"></i>
+    </button>
+  </div>
+</nav>
